@@ -1,5 +1,7 @@
 const express = require("express");
 
+const cookieParser = require("cookie-parser");
+
 const app = express();
 
 const port = 8000;
@@ -12,6 +14,10 @@ app.use(expressLayouts);
 
 app.set("layout extractStyles", true);
 app.set("layout extractScripts", true);
+
+app.use(express.urlencoded());
+
+app.use(cookieParser());
 
 app.use(express.static("./assets"));
 
