@@ -1,0 +1,14 @@
+ul {
+  background-color: #1287f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  color: #fff;
+  li {
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
